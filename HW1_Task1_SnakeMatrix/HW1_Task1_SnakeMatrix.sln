@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW1_Task1_SnakeMatrix", "HW1_Task1_SnakeMatrix.csproj", "{EDC0EDF0-677A-4BD2-B0C2-FDFA6EAE48C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDC0EDF0-677A-4BD2-B0C2-FDFA6EAE48C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC0EDF0-677A-4BD2-B0C2-FDFA6EAE48C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC0EDF0-677A-4BD2-B0C2-FDFA6EAE48C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC0EDF0-677A-4BD2-B0C2-FDFA6EAE48C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {186E5A54-0997-4B71-AE1C-999C5A663BB1}
+	EndGlobalSection
+EndGlobal
