@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Enter row count:");
+﻿//Вітаю. Перше завдання по створенню репозиторію Ви виконали.
+Console.WriteLine("Enter row count:");
 int m = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter col count:");
 int n = int.Parse(Console.ReadLine());
