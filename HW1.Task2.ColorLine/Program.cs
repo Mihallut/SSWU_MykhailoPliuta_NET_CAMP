@@ -52,6 +52,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         endCol = matrix.GetLength(1) - 1;
     }
 }
+// результат треба повертати через параметри метода, а не друкувати. Але алгоритмічно все добре!
 
 if (maxLength > 0)
 {
