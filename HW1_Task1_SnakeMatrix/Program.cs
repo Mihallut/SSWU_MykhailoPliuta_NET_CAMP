@@ -1,10 +1,13 @@
 ﻿//Вітаю. Перше завдання по створенню репозиторію Ви виконали.
+
+// ми домовлялись мислити об'єктно-зорієнтовано!! Це означає, що у Main цього коду не мало б бути
 Console.WriteLine("Enter row count:");
 int m = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter col count:");
 int n = int.Parse(Console.ReadLine());
 
 int counter1 = 1;
+//Навіщо окремо опрацьовувати зовнішню вітку спіралі?
 int[,] matrix1 = new int[m, n];
 for (int i = 0; i < m; i++)
 {
@@ -61,7 +64,7 @@ while (counter1 < m * n)
     }
 
 }
-
+// Цього можна уникнути.
 //При данном решении в центре всегда остаётся незаполненная ячейка.
 //Убираем её при помощи следующего цикла.
 for (int i = 0; i < m; i++)
@@ -78,7 +81,7 @@ for (int i = 0; i < m; i++)
 for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
-    {
+    {// Що тут робить невідома чарівна константа 10?
         if (matrix1[i, j] < 10)
         {
             Console.Write(matrix1[i, j] + "  ");
