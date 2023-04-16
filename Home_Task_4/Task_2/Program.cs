@@ -10,7 +10,7 @@ namespace Task_2
 
             string text = TxtReader.ReadTextFromFile(path);
 
-            List<string> matches = EmailAndLexemesFinder.FindAll(text);
+            List<string> matches = EmailAndLexemesFinder.FindAllWithoutRegex(text);
 
             foreach (string match in matches)
             {

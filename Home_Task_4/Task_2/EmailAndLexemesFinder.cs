@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -30,6 +31,49 @@ namespace Task_2
             }
 
             return result;
+        }
+
+
+        public static List<string> FindAllWithoutRegex(string text)
+        {
+            List<string> result = new List<string>();
+            List<string> words = text.Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList();
+            List<string> emails = new List<string>();
+            List<string> lexemes = new List<string>();
+            foreach (string word in words)
+            {
+                if (word.Contains("@"))
+                {
+                    if (word.StartsWith("@"))
+                    {
+                        lexemes.Add(word);
+                    }
+                    else
+                    {
+                        if (IsValidEmail(word))
+                        {
+                            emails.Add(word);
+                        }
+                    }
+
+                }
+            }
+            result.AddRange(emails);
+            result.AddRange(lexemes);
+            return result;
+        }
+
+        private static bool IsValidEmail(string email)
+        {
+            try
+            {
+                MailAddress mail = new MailAddress(email);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
     }
 }
