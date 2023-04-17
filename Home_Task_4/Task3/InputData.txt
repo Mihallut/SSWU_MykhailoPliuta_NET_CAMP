@@ -1,0 +1,10 @@
+Amount of flats: 4; Number of quater: 1
+Apartment number: 1; Address: qwerty; Lastname: Alanis; input: 12344.32; output: 14423.43; Check Dates: 12.01.2023, 13.02.2023, 23.03.2023
+Apartment number: 2; Address: qwerty; Lastname: Steve; input: 10444.02; output: 12543.43; Check Dates: 11.01.2023, 15.02.2023, 12.03.2023
+Apartment number: 3; Address: qwerty; Lastname: Claudius; input: 2341.42; output: 2341.42; Check Dates: 15.01.2023, 17.02.2023, 11.03.2023
+Apartment number: 4; Address: qwerty; Lastname: Christian; input: 19341.42; output: 21341.42; Check Dates: 17.01.2023, 14.02.2023, 19.03.2023
+
+Amount of flats: 3; Number of quater: 2
+Apartment number: 1; Address: asdfg; Lastname: Liam; input: 87789.32; output: 89423.43; Check Dates: 22.01.2023, 23.02.2023, 04.03.2023
+Apartment number: 2; Address: asdfg; Lastname: Klaudie; input: 67444.02; output: 69543.43; Check Dates: 25.01.2023, 25.02.2023, 22.03.2023
+Apartment number: 3; Address: asdfg; Lastname: Tammy; input: 922341.42; output: 923341.42; Check Dates: 25.01.2023, 27.02.2023, 21.03.2023
