@@ -21,6 +21,7 @@ namespace Home_Task_2
         {
 
         }
+        // Який метод викликатиме цей?
         private bool IsWaterLevelEnough(double requirement)
         {
             return true;
