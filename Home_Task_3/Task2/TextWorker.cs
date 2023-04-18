@@ -12,7 +12,7 @@ namespace Task2
     {
         public static int? FindSecondEntranceIndex(string text, string soughtFor)
         {
-
+            // Ця умова є вже в Contains))
             if (text.Length > soughtFor.Length)
             {
                 if (text.Contains(soughtFor))
@@ -60,6 +60,7 @@ namespace Task2
                     words[i] = substitute;
                 }
             }
+            //Втрачено початкові пробільні символи. 
             string result = String.Join(' ', words);
 
             return result;
