@@ -1,7 +1,7 @@
 ﻿namespace Task2
 {
     internal class Program
-    {
+    {// У діаграмі не правильно визначені взаємозв'язки між класами. Не видно, де створюються об'єкти класів та як вони взаємодіють.
         static void Main(string[] args)
         {
             string initialText1 = "word word";
