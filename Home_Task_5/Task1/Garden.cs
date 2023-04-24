@@ -23,6 +23,7 @@ namespace Task1
         {
             _hull = new List<Tree>();
             _fences = new List<Fence>();
+            // Треба робити глибоку копію.
             _trees = trees;
             CreateFences();
             CalcualteFancesLenght();
@@ -57,7 +58,7 @@ namespace Task1
         }
 
         private List<Tree> JarvisAlgorithm()
-        {
+        {// а якщо дерев всього 2?
             Tree first = _trees[0];
             foreach (Tree tree in _trees)
             {
@@ -142,7 +143,7 @@ namespace Task1
         }
 
         public static bool operator >=(Garden gardenLeft, Garden gardenRight)
-        {
+        {// Не менше рівне заперечене буде більше, а Ви визначаєте >=
             return !(gardenLeft <= gardenRight);
         }
     }
