@@ -14,6 +14,7 @@ namespace Task2
         private readonly double _height;
         private readonly double _length;
         private Stack<IPackable> _packed;
+        // Є правильна ієрархія, але немає правильного методу обходу цієї їєрархії
 
         public string Name { get { return _name; } }
 
