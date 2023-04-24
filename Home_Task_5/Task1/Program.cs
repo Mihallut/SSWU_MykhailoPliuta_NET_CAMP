@@ -1,5 +1,5 @@
 ﻿namespace Task1
-{
+{//Mykhailo	Pliuta	80	0	0	90	85	95	75	85 Вітаю вас у 2 турі.
     internal class Program
     {
         static void Main(string[] args)
