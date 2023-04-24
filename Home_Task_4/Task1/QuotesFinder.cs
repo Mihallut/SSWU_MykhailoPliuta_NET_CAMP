@@ -33,7 +33,8 @@ namespace Task1
 
             return result;
         }
-
+// Є стандартний метод. Винаходили тут велосипед.
+        Крім того, private і static вже говорить, що метод не на своєму місці.
         private static void ConvertTextToCharList(List<string> text, List<char> textAsCharList)
         {
             foreach (string s in text)
