@@ -3,7 +3,7 @@ namespace Task3
 {
 
     internal class Program
-    {
+    {// Я точно не таку копію екрану хотіла отримати. Думаю, помилково скинули)
         static void Main(string[] args)
         {
             double costOfCW = 1.44;
