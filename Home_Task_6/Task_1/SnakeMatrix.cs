@@ -16,11 +16,12 @@ namespace Task_1
         {
             _matrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
             Array.Copy(matrix, _matrix, matrix.Length);
+            // точно лишнє
             Console.WriteLine();
         }
 
         public IEnumerator<int> GetEnumerator()
-        {
+        {// перевірте для парної і непарної розмірності матриці.
             int rowCount = _matrix.GetLength(0);
             int colCount = _matrix.GetLength(1);
             for (int i = 0; i < rowCount + colCount - 1; i++)
