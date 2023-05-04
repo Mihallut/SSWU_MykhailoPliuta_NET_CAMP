@@ -14,7 +14,7 @@ namespace Task_2
         }
 
         private static IEnumerable<int> GetSortedArray(params int[][] arrays)
-        {
+        {// синтаксично добре, але порушується філософія yield.
             var mergedArray = arrays.SelectMany(x => x).OrderBy(x => x);
             foreach (int item in mergedArray)
             {
