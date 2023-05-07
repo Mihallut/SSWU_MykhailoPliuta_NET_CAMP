@@ -8,6 +8,18 @@ namespace Home_Task_7
 {
     public static class Display
     {
+
+        public static int GetColorLightTime(string trafficlightLocation, string colorName)
+        {
+            Console.WriteLine($"Enter {colorName} color light time for {trafficlightLocation} traffic light:");
+            return int.Parse(Console.ReadLine());
+        }
+
+        public static int GetWorkSeconds()
+        {
+            Console.WriteLine("Enter crossroad work seconds for demo:");
+            return int.Parse(Console.ReadLine());
+        }
         public static void DisplayInfo(CrossroadEventArgs args)
         {
             Console.Clear();

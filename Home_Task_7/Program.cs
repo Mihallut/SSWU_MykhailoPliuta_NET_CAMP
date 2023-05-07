@@ -15,7 +15,9 @@ namespace Home_Task_7
                         new TrafficLight(Enums.Locations.EastWest, false) ,
                         new TrafficLight(Enums.Locations.SouthNorth, true) ,
                         new TrafficLight(Enums.Locations.WestEast, false)
-              }, new XShapedCrossroadStrategy(15, 15), 60);
+              },
+              new XShapedCrossroadStrategy(Display.GetColorLightTime("NorthSouth/SouthNorth", "green"), Display.GetColorLightTime("EastWest/WestEast", "green")),
+              Display.GetWorkSeconds());
 
 
             crossroad.ConditionWasChanged += Display.DisplayInfo;
