@@ -2,7 +2,7 @@
 using Home_Task_7.Strategies;
 
 namespace Home_Task_7
-{
+{// Ваш бал 98.
     internal class Program
     {
         static void Main(string[] args)
