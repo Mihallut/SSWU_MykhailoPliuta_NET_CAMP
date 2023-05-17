@@ -20,6 +20,8 @@ namespace Home_Task_7
             Console.WriteLine("Enter crossroad work seconds for demo:");
             return int.Parse(Console.ReadLine());
         }
+
+
         public static void DisplayInfo(CrossroadEventArgs args)
         {
             Console.Clear();
