@@ -1,0 +1,25 @@
+﻿<Window x:Class="Task_1.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_1"
+        mc:Ignorable="d"
+
+        Title="Client App" Height="600" Width="800">
+    <Grid Background="#ffdadada">
+        <Border MinWidth="400" MaxWidth="550" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Please enter card number:" FontSize="20" FontWeight="Bold" Margin="0 0 0 20"/>
+                <TextBlock x:Name="textBlockResult" FontSize="15" Margin="0 0 0 20"/>
+                <TextBox x:Name="textBoxCreditCard" TextChanged="textBoxCreditCard_TextChanged" materialDesign:HintAssist.Hint="Enter credit card number" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <Button Content="Check it" Margin="0 20" Click="Check_Click" Style="{StaticResource MaterialDesignFlatButton}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
