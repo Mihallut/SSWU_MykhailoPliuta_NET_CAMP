@@ -17,7 +17,7 @@
             <StackPanel>
                 <TextBlock Text="Please enter card number:" FontSize="20" FontWeight="Bold" Margin="0 0 0 20"/>
                 <TextBlock x:Name="textBlockResult" FontSize="15" Margin="0 0 0 20"/>
-                <TextBox x:Name="textBoxCreditCard" TextChanged="textBoxCreditCard_TextChanged" materialDesign:HintAssist.Hint="Enter credit card number" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="textBoxCreditCard" TextChanged="TextBoxCreditCard_TextChanged" materialDesign:HintAssist.Hint="Enter credit card number" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <Button Content="Check it" Margin="0 20" Click="Check_Click" Style="{StaticResource MaterialDesignFlatButton}"/>
             </StackPanel>
         </Border>

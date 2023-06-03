@@ -1,8 +1,8 @@
 ﻿namespace Task_1.CardServises
 {
-    public class CardCreator
+    public static class CardCreator
     {
-        public CreditCard CreateCard(string number)
+        public static CreditCard CreateCard(string number)
         {
             string type = DefineCardType(number);
             if (type != null)
@@ -22,7 +22,7 @@
             }
         }
 
-        private string DefineCardType(string number)
+        private static string DefineCardType(string number)
         {
             string cardType;
             if (Validator.IsVisaCard(number))

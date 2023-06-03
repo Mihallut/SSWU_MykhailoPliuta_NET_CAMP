@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Task_1.CardServises;
 
 namespace Task_1
@@ -29,8 +18,7 @@ namespace Task_1
         private void Check_Click(object sender, RoutedEventArgs e)
         {
             string cardNumber = new string(textBoxCreditCard.Text.Where(c => char.IsDigit(c)).ToArray());
-            CardCreator cardCreator = new CardCreator();
-            CreditCard creditCard = cardCreator.CreateCard(cardNumber);
+            CreditCard creditCard = CardCreator.CreateCard(cardNumber);
             if (creditCard != null)
             {
                 textBlockResult.Text = creditCard.ToString();
@@ -42,7 +30,7 @@ namespace Task_1
             }
         }
 
-        private void textBoxCreditCard_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBoxCreditCard_TextChanged(object sender, TextChangedEventArgs e)
         {
 
             // Удалить все символы, кроме цифр из текста
